@@ -1,5 +1,6 @@
 import cors from "cors";
 import express, { json, urlencoded } from "express";
+
 import { api } from "@routers";
 
 const app = express();
