@@ -12,6 +12,10 @@ module.exports = {
 	},
 	resolve: {
 		extensions: [".ts", ".js"],
+		alias: {
+			"@routers": path.resolve(__dirname, "../src/routers/index"),
+			"@routers/*": path.resolve(__dirname, "../src/routers"),
+		},
 	},
 	module: {
 		rules,

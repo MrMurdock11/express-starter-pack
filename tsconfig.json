@@ -10,6 +10,11 @@
 		"forceConsistentCasingInFileNames": true,
 		"removeComments": true,
 		"resolveJsonModule": true,
+		"baseUrl": "./src",
+		"paths": {
+			"@routers": ["routers/index.ts"],
+			"@routers/*": ["routers/*"]
+		}
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "**/*.spec.ts"]
